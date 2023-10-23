@@ -104,3 +104,15 @@ markdown.markdown(some_text, extensions=['fenced_code'])
         print(f"Usuário: {usuario} autorizado")
     else    
         print("Senha errada")
+
+# Para saber mais
+
+Crie um programa com interface gráfica. 
+
+Sugestão 01: usar a biblioteca tkinter
+
+Sugestão 02: Ver tutorial “Tkinter: Interfaces gráficas em Python”
+
+https://www.devmedia.com.br/tkinter-interfaces-graficas-em-python/33956 
+
+4) Sugestão 03: ferramenta gráfica em https://visualtk.com 
