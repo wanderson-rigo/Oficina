@@ -1,3 +1,5 @@
+markdown.markdown(some_text, extensions=['fenced_code'])
+
 # Variáveis e tipos
 
     x = 5
