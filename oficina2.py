@@ -16,7 +16,8 @@ usuarios = {
 
 for usuario, dados in usuarios.items():
     senha = dados["senha"]
-if senha == "123"    :
+    
+    if senha == "123":
         print(f"Usuário: {usuario} autorizado")
     else:
         print("Senha errada")
