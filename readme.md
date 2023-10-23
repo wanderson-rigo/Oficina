@@ -100,10 +100,14 @@ markdown.markdown(some_text, extensions=['fenced_code'])
     
 # Selecionando dados
 
-    if senha == "123":
-        print(f"Usuário: {usuario} autorizado")
-    else    
-        print("Senha errada")
+    for usuario, dados in usuarios.items():
+        senha = dados["senha"]
+    
+        if senha == "123":
+            print(f"Usuário: {usuario} autorizado")
+        else:
+            print("Senha errada")
+
 
 # Para saber mais
 
