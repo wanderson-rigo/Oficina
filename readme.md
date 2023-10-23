@@ -1,4 +1,16 @@
-Os passos da oficina. 
+x = 5
+print(type(x))
+
+x = "Olá"
+print(type(x))
+
+x = "11"
+y = 1
+z = x + y 
+
+resposta = input("Digite seu nome:") or "Wanderson"
+print(resposta)
+
 
 nome = "Wanderson rigo"
 print(nome)
@@ -12,6 +24,24 @@ print("Meu nome tem",tamanhoNome,"letras")
 
 tamanhoSobrenome = (len(sobrenome))
 print("Meu sobrenome tem",tamanhoSobrenome,"letras")
+
+def contar_letras(nome, sobrenome):
+    qtd_nome = len(nome)
+    qtd_sobrenome = len(sobrenome)    
+    return qtd_nome, qtd_sobrenome 
+
+# Exemplo de uso da função
+nome = input("Digite o seu nome: ")
+sobrenome = input("Digite o seu sobrenome: ")
+
+resposta = contar_letras(nome, sobrenome)
+
+print(resposta)
+
+qtd_letras_nome, qtd_letras_sobrenome = resposta
+
+print(f"O nome '{nome}' tem {qtd_letras_nome} letras.")
+print(f"O sobrenome '{sobrenome}' tem {qtd_letras_sobrenome} letras.")
 
 import pymsgbox
 
@@ -45,3 +75,18 @@ usuarios = {
         "email": "sicrano@nada.com"
     }
 }
+
+#itere sobre o dicionario
+for usuario in usuarios:
+    print(usuario)
+
+for usuario, dados in usuarios.items():
+    email = dados["email"]
+    senha = dados["senha"]
+    print(f"Usuário: {usuario}, Email: {email}, Senha: {senha}")
+    
+    #imprima só senha gual a 123
+    if senha == "123":
+        print(f"Usuário: {usuario} autorizado")
+    else    
+        print("Senha errada")
