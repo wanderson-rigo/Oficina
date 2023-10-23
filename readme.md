@@ -43,10 +43,13 @@ print(resposta)
 
 # Desestruturação de tupla 
 qtd_letras_nome, qtd_letras_sobrenome = resposta
+
 print(f"O nome '{nome}' tem {qtd_letras_nome} letras.")
+
 print(f"O sobrenome '{sobrenome}' tem {qtd_letras_sobrenome} letras.")
 
 # Usando interfaces gráficas
+
 import pymsgbox
 
 pymsgbox.alert('Este é um alerta!', 'Título do Alerta')
@@ -92,7 +95,8 @@ for usuario, dados in usuarios.items():
     senha = dados["senha"]
     print(f"Usuário: {usuario}, Email: {email}, Senha: {senha}")
     
-    #imprima só senha gual a 123
+# Selecionando dados
+
     if senha == "123":
         print(f"Usuário: {usuario} autorizado")
     else    
